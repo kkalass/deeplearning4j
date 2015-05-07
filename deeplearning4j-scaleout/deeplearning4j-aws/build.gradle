@@ -1,0 +1,8 @@
+
+description = 'DeepLearning4j-AWS'
+dependencies {
+    compile group: 'com.amazonaws', name: 'aws-java-sdk', version:'1.7.2'
+  compile project(':deeplearning4j-core')
+  compile project(':deeplearning4j-scaleout:deeplearning4j-scaleout-akka')
+    compile group: 'com.jcraft', name: 'jsch', version:'0.1.51'
+}

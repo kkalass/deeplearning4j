@@ -1,0 +1,33 @@
+allprojects  {
+  apply plugin: 'maven'
+
+  group = 'org.deeplearning4j'
+  version = '0.0.3.3.3.alpha1-SNAPSHOT'
+}
+
+ext.ND4J_VERSION="0.0.3.5.5.3-SNAPSHOT"
+
+subprojects {
+  apply plugin: 'java'
+  sourceCompatibility = 1.7
+  targetCompatibility = 1.7
+
+  task packageSources(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+
+  }
+  artifacts.archives packageSources
+  repositories {
+    mavenLocal()
+    
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+    maven { url "https://repository.cloudera.com/artifactory/cloudera-repos/" }
+  }
+
+  configurations.all {
+}
+  
+  
+}

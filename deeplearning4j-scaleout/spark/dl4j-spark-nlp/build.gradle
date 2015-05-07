@@ -1,0 +1,9 @@
+
+description = 'dl4j-spark-nlp'
+dependencies {
+    compile group: 'com.hazelcast', name: 'hazelcast-all', version:'3.4.2'
+  compile project(':deeplearning4j-scaleout:deeplearning4j-nlp')
+  compile project(':deeplearning4j-scaleout:spark:dl4j-spark')
+    testCompile group: 'org.nd4j', name: 'nd4j-jblas', version:'0.0.3.5.5.3-SNAPSHOT'
+    testCompile group: 'org.jblas', name: 'jblas', version:'1.2.3'
+}

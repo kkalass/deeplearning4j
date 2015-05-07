@@ -1,0 +1,18 @@
+
+description = ''
+dependencies {
+    compile group: 'org.apache.lucene', name: 'lucene-analyzers-common', version:'4.10.3'
+    compile group: 'org.apache.lucene', name: 'lucene-core', version:'4.10.3'
+    compile group: 'org.apache.lucene', name: 'lucene-queryparser', version:'4.10.3'
+  compile project(':deeplearning4j-scaleout:deeplearning4j-scaleout-akka')
+  compile project(':deeplearning4j-core')
+    compile group: 'it.unimi.dsi', name: 'dsiutils', version:'2.2.2'
+    compile group: 'org.cleartk', name: 'cleartk-snowball', version:'2.0.0'
+    compile group: 'org.cleartk', name: 'cleartk-opennlp-tools', version:'2.0.0'
+    compile group: 'io.dropwizard', name: 'dropwizard-assets', version:'0.8.0'
+    compile group: 'io.dropwizard', name: 'dropwizard-views-mustache', version:'0.8.0'
+    compile group: 'io.dropwizard', name: 'dropwizard-views-freemarker', version:'0.8.0'
+    testCompile group: 'org.nd4j', name: 'nd4j-jblas', version:'0.0.3.5.5.3-SNAPSHOT'
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+    testCompile group: 'org.jblas', name: 'jblas', version:'1.2.3'
+}

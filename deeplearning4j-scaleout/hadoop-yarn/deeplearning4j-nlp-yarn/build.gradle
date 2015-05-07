@@ -1,0 +1,6 @@
+
+description = 'deeplearning4j-nlp-yarn'
+dependencies {
+  compile project(':deeplearning4j-scaleout:deeplearning4j-nlp')
+  compile project(':deeplearning4j-scaleout:hadoop-yarn:cdh4')
+}

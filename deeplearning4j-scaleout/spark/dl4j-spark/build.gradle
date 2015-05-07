@@ -1,0 +1,6 @@
+
+description = 'dl4j-spark'
+dependencies {
+    compile group: 'com.hazelcast', name: 'hazelcast-all', version:'3.4.2'
+    testCompile group: 'org.nd4j', name: 'nd4j-jblas', version:'0.0.3.5.5.3-SNAPSHOT'
+}

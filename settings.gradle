@@ -1,0 +1,32 @@
+rootProject.name = 'deeplearning4j-parent'
+include ':deeplearning4j-core'
+include ':deeplearning4j-scaleout:deeplearning4j-scaleout-akka'
+include ':deeplearning4j-scaleout:deeplearning4j-scaleout-api'
+include ':deeplearning4j-scaleout:deeplearning4j-nlp'
+include ':deeplearning4j-scaleout:deeplearning4j-scaleout-zookeeper'
+include ':deeplearning4j-scaleout:deeplearning4j-aws'
+include ':deeplearning4j-scaleout:hadoop-yarn:cdh4'
+include ':deeplearning4j-scaleout:hadoop-yarn:deeplearning4j-nlp-yarn'
+include ':deeplearning4j-scaleout:hadoop-yarn'
+include ':deeplearning4j-scaleout:spark:dl4j-spark'
+include ':deeplearning4j-scaleout:spark:dl4j-spark-nlp'
+include ':deeplearning4j-scaleout:spark'
+include ':deeplearning4j-scaleout'
+include ':deeplearning4j-cli:deeplearning4j-cli-api'
+include ':deeplearning4j-cli'
+
+project(':deeplearning4j-core').projectDir = "$rootDir/deeplearning4j-core" as File
+project(':deeplearning4j-scaleout:deeplearning4j-scaleout-akka').projectDir = "$rootDir/deeplearning4j-scaleout/deeplearning4j-scaleout-akka" as File
+project(':deeplearning4j-scaleout:deeplearning4j-scaleout-api').projectDir = "$rootDir/deeplearning4j-scaleout/deeplearning4j-scaleout-api" as File
+project(':deeplearning4j-scaleout:deeplearning4j-nlp').projectDir = "$rootDir/deeplearning4j-scaleout/deeplearning4j-nlp" as File
+project(':deeplearning4j-scaleout:deeplearning4j-scaleout-zookeeper').projectDir = "$rootDir/deeplearning4j-scaleout/deeplearning4j-scaleout-zookeeper" as File
+project(':deeplearning4j-scaleout:deeplearning4j-aws').projectDir = "$rootDir/deeplearning4j-scaleout/deeplearning4j-aws" as File
+project(':deeplearning4j-scaleout:hadoop-yarn:cdh4').projectDir = "$rootDir/deeplearning4j-scaleout/hadoop-yarn/cdh4" as File
+project(':deeplearning4j-scaleout:hadoop-yarn:deeplearning4j-nlp-yarn').projectDir = "$rootDir/deeplearning4j-scaleout/hadoop-yarn/deeplearning4j-nlp-yarn" as File
+project(':deeplearning4j-scaleout:hadoop-yarn').projectDir = "$rootDir/deeplearning4j-scaleout/hadoop-yarn" as File
+project(':deeplearning4j-scaleout:spark:dl4j-spark').projectDir = "$rootDir/deeplearning4j-scaleout/spark/dl4j-spark" as File
+project(':deeplearning4j-scaleout:spark:dl4j-spark-nlp').projectDir = "$rootDir/deeplearning4j-scaleout/spark/dl4j-spark-nlp" as File
+project(':deeplearning4j-scaleout:spark').projectDir = "$rootDir/deeplearning4j-scaleout/spark" as File
+project(':deeplearning4j-scaleout').projectDir = "$rootDir/deeplearning4j-scaleout" as File
+project(':deeplearning4j-cli:deeplearning4j-cli-api').projectDir = "$rootDir/deeplearning4j-cli/deeplearning4j-cli-api" as File
+project(':deeplearning4j-cli').projectDir = "$rootDir/deeplearning4j-cli" as File

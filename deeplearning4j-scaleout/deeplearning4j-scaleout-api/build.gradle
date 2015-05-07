@@ -1,0 +1,7 @@
+
+description = 'deeplearning4j-scaleout-api'
+dependencies {
+  compile project(':deeplearning4j-core')
+    compile group: 'org.json', name: 'json', version:'20131018'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version:'2.5.1'
+}

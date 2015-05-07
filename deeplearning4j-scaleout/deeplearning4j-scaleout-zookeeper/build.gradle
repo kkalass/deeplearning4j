@@ -1,0 +1,12 @@
+
+description = ''
+dependencies {
+  compile project(':deeplearning4j-core')
+  compile project(':deeplearning4j-scaleout:deeplearning4j-scaleout-api')
+    compile(group: 'org.apache.zookeeper', name: 'zookeeper', version:'3.4.5') {
+exclude(module: 'log4j')
+    }
+    compile group: 'org.apache.curator', name: 'curator-framework', version:'2.4.0'
+    compile group: 'org.apache.curator', name: 'curator-test', version:'2.4.0'
+    compile group: 'org.apache.curator', name: 'curator-recipes', version:'2.4.0'
+}

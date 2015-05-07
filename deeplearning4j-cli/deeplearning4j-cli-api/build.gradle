@@ -1,0 +1,11 @@
+
+description = 'deeplearning4j-cli-api'
+dependencies {
+  compile project(':deeplearning4j-core')
+    compile group: 'org.springframework', name: 'spring-core', version:'3.2.5.RELEASE'
+    compile group: 'args4j', name: 'args4j', version:'2.0.29'
+    compile group: 'org.slf4j', name: 'slf4j-api', version:'1.7.10'
+    compile group: 'junit', name: 'junit', version:'4.12'
+    compile group: 'org.nd4j', name: 'canova-api', version:'0.0.0.2-SNAPSHOT'
+    testCompile group: 'org.nd4j', name: 'nd4j-jblas', version:'0.0.3.5.5.3-SNAPSHOT'
+}
